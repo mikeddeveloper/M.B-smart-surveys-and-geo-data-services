@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M.B Smart Surveys & Geo-Data Services — Precision Land Surveying in Nigeria</title>
+  <meta name="description" content="Registered Nigerian surveyors delivering topographical, bathymetric, cadastral, engineering and GIS mapping services. Trusted by the Nigerian Army and private estate developers." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+
+  <!-- Fonts: Cormorant Garamond (display, matches the serif feel of the logo) + Manrope (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- AOS animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Lucide icons (loaded at end of body) -->
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__brand" aria-label="MB Smart Surveys home">
+        <img src="assets/logo.png" alt="MB Smart Surveys logo" class="nav__logo" />
+        <div class="nav__wordmark">
+          <span class="nav__title">M.B Smart Surveys</span>
+          <span class="nav__sub">& Geo-Data Services</span>
+        </div>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#ceo">Leadership</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a href="#book" class="nav__cta">Book a Session</a>
+      </nav>
+
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO with scrolling / parallax background ===== -->
+  <section class="hero" id="home">
+    <!-- Layered moving backgrounds -->
+    <div class="hero__bg-layer hero__bg-layer--1" aria-hidden="true"></div>
+    <div class="hero__bg-layer hero__bg-layer--2" aria-hidden="true"></div>
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__vignette" aria-hidden="true"></div>
+
+    <!-- Floating decorative elements -->
+    <div class="float float--1" aria-hidden="true"></div>
+    <div class="float float--2" aria-hidden="true"></div>
+    <div class="float float--3" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <div class="hero__content" data-aos="fade-up" data-aos-duration="1000">
+        <span class="hero__eyebrow">
+          <span class="dot"></span>
+          Registered under the Corporate Affairs Commission, Nigeria
+        </span>
+
+        <h1 class="hero__title">
+          <span class="hero__title-line">Mapping the</span>
+          <span class="hero__title-line"><em>ground truth</em></span>
+          <span class="hero__title-line">of Nigeria.</span>
+        </h1>
+
+        <p class="hero__lede">
+          Topographical, bathymetric, cadastral and engineering surveys delivered with
+          precision instruments and principled professionals — members of the Nigerian
+          Institution of Surveyors.
+        </p>
+
+        <div class="hero__cta">
+          <a href="#book" class="btn btn--primary">
+            Book a Session
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="#services" class="btn btn--ghost">
+            Explore Services
+          </a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__num">5<span>+</span></span>
+            <span class="stat__label">Years combined<br/>field experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">6</span>
+            <span class="stat__label">Core service<br/>disciplines</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">100<span>%</span></span>
+            <span class="stat__label">Licensed<br/>professionals</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__compass" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200" aria-hidden="true">
+        <svg viewBox="0 0 300 300" class="compass">
+          <defs>
+            <radialGradient id="compassGrad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#0f4d2a" stop-opacity="0.1"/>
+              <stop offset="100%" stop-color="#0f4d2a" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="150" cy="150" r="140" fill="url(#compassGrad)"/>
+          <circle cx="150" cy="150" r="140" fill="none" stroke="#0f4d2a" stroke-width="1" stroke-dasharray="2 4" opacity="0.4"/>
+          <circle cx="150" cy="150" r="110" fill="none" stroke="#0f4d2a" stroke-width="1" opacity="0.3"/>
+          <circle cx="150" cy="150" r="80" fill="none" stroke="#0f4d2a" stroke-width="1" opacity="0.25"/>
+          <!-- Compass ticks -->
+          <g class="compass__ticks">
+            <!-- 0 -->
+            <line x1="150" y1="10" x2="150" y2="30" stroke="#0f4d2a" stroke-width="2"/>
+            <line x1="150" y1="270" x2="150" y2="290" stroke="#0f4d2a" stroke-width="2"/>
+            <line x1="10" y1="150" x2="30" y2="150" stroke="#0f4d2a" stroke-width="2"/>
+            <line x1="270" y1="150" x2="290" y2="150" stroke="#0f4d2a" stroke-width="2"/>
+          </g>
+          <!-- Needle -->
+          <g class="compass__needle">
+            <polygon points="150,40 160,150 150,160 140,150" fill="#b31e23"/>
+            <polygon points="150,260 160,150 150,140 140,150" fill="#0f4d2a"/>
+            <circle cx="150" cy="150" r="8" fill="#f5f1e8" stroke="#0f4d2a" stroke-width="2"/>
+          </g>
+          <text x="150" y="55" text-anchor="middle" font-family="Cormorant Garamond" font-size="18" fill="#0f4d2a" font-weight="600">N</text>
+          <text x="150" y="255" text-anchor="middle" font-family="Cormorant Garamond" font-size="18" fill="#0f4d2a" font-weight="600">S</text>
+          <text x="30" y="156" text-anchor="middle" font-family="Cormorant Garamond" font-size="18" fill="#0f4d2a" font-weight="600">W</text>
+          <text x="270" y="156" text-anchor="middle" font-family="Cormorant Garamond" font-size="18" fill="#0f4d2a" font-weight="600">E</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Topographical Survey</span><span class="marquee__dot">✦</span>
+      <span>Bathymetric Survey</span><span class="marquee__dot">✦</span>
+      <span>Cadastral Survey</span><span class="marquee__dot">✦</span>
+      <span>Engineering Design</span><span class="marquee__dot">✦</span>
+      <span>Land Acquisition</span><span class="marquee__dot">✦</span>
+      <span>GIS & Mapping</span><span class="marquee__dot">✦</span>
+      <span>Project Management</span><span class="marquee__dot">✦</span>
+      <!-- duplicate for seamless loop -->
+      <span>Topographical Survey</span><span class="marquee__dot">✦</span>
+      <span>Bathymetric Survey</span><span class="marquee__dot">✦</span>
+      <span>Cadastral Survey</span><span class="marquee__dot">✦</span>
+      <span>Engineering Design</span><span class="marquee__dot">✦</span>
+      <span>Land Acquisition</span><span class="marquee__dot">✦</span>
+      <span>GIS & Mapping</span><span class="marquee__dot">✦</span>
+      <span>Project Management</span><span class="marquee__dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <header class="section-head" data-aos="fade-up">
+        <span class="section-eyebrow">— What we do</span>
+        <h2 class="section-title">Professional services, rooted in <em>rigor</em>.</h2>
+        <p class="section-lede">
+          Six interlocking disciplines that take your project from raw land to title-ready documentation.
+        </p>
+      </header>
+
+      <div class="services__grid">
+        <article class="service" data-aos="fade-up" data-aos-delay="0">
+          <div class="service__num">01</div>
+          <div class="service__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+            </svg>
+          </div>
+          <h3>Surveying & Geoinformatics Consultancy</h3>
+          <p>Advisory built on decades of institutional knowledge — shaping project scopes, standards, and deliverables before the first peg is driven.</p>
+        </article>
+
+        <article class="service" data-aos="fade-up" data-aos-delay="80">
+          <div class="service__num">02</div>
+          <div class="service__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m8 3 4 8 5-5 5 15H2L8 3z"/>
+            </svg>
+          </div>
+          <h3>Topographical & Bathymetric Surveys</h3>
+          <p>Land contours above water, seabed profiles below. Precision data for engineers, architects, and marine developers alike.</p>
+        </article>
+
+        <article class="service" data-aos="fade-up" data-aos-delay="160">
+          <div class="service__num">03</div>
+          <div class="service__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="22" x2="21" y2="22"/>
+              <line x1="6" y1="18" x2="6" y2="11"/>
+              <line x1="10" y1="18" x2="10" y2="11"/>
+              <line x1="14" y1="18" x2="14" y2="11"/>
+              <line x1="18" y1="18" x2="18" y2="11"/>
+              <polygon points="12 2 20 7 4 7"/>
+            </svg>
+          </div>
+          <h3>Cadastral & Engineering Surveys</h3>
+          <p>Boundary definition and detailed engineering measurement for title registration, property development, and infrastructure.</p>
+        </article>
+
+        <article class="service" data-aos="fade-up" data-aos-delay="0">
+          <div class="service__num">04</div>
+          <div class="service__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="6" cy="19" r="3"/>
+              <circle cx="18" cy="5" r="3"/>
+              <path d="M6.7 17.3 17.3 6.7"/>
+              <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/>
+            </svg>
+          </div>
+          <h3>Engineering Design & Route Survey</h3>
+          <p>Alignment studies, corridor analysis, and design-grade route surveys for roads, pipelines, and power transmission.</p>
+        </article>
+
+        <article class="service" data-aos="fade-up" data-aos-delay="80">
+          <div class="service__num">05</div>
+          <div class="service__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21 3 6"/>
+              <line x1="9" y1="3" x2="9" y2="18"/>
+              <line x1="15" y1="6" x2="15" y2="21"/>
+            </svg>
+          </div>
+          <h3>Mapping / GIS</h3>
+          <p>Spatial intelligence layered into decision-ready maps — from parcel atlases to environmental monitoring dashboards.</p>
+        </article>
+
+        <article class="service" data-aos="fade-up" data-aos-delay="160">
+          <div class="service__num">06</div>
+          <div class="service__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+              <path d="m9 14 2 2 4-4"/>
+            </svg>
+          </div>
+          <h3>Land Acquisition & Project Management</h3>
+          <p>End-to-end coordination — from title search and acquisition through execution, quality assurance, and handover.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT / VISION / MISSION ===== -->
+  <section class="about" id="about">
+    <div class="about__bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__intro" data-aos="fade-right">
+          <span class="section-eyebrow section-eyebrow--light">— About the firm</span>
+          <h2 class="section-title section-title--light">
+            Surveyors of record. <br/>
+            Partners in <em>progress</em>.
+          </h2>
+          <p class="about__para">
+            M.B Smart Surveys & Geo-Data Services is a Nigerian firm registered under the
+            Corporate Affairs Commission in line with the Companies and Allied Matters Act,
+            1990. Our principal partners are Registered Surveyors and active Members of
+            the Nigerian Institution of Surveyors.
+          </p>
+          <p class="about__para">
+            Long before registration, our principals led projects as party leaders,
+            team leaders and project managers. Today our field personnel carry more
+            than five years of combined experience delivering integrated solutions to
+            public and private clients.
+          </p>
+        </div>
+
+        <div class="about__pillars">
+          <article class="pillar" data-aos="fade-left" data-aos-delay="0">
+            <div class="pillar__icon"><i data-lucide="eye"></i></div>
+            <h3>Vision</h3>
+            <p>
+              To be recognized experts in Mapping Services, Cadastral and Layout
+              Surveys — and trusted Expert Witnesses in the Court of Law.
+            </p>
+          </article>
+
+          <article class="pillar" data-aos="fade-left" data-aos-delay="100">
+            <div class="pillar__icon"><i data-lucide="target"></i></div>
+            <h3>Mission</h3>
+            <p>
+              To discharge our duties professionally, diligently and ethically — to
+              the delight of every client we serve.
+            </p>
+          </article>
+
+          <article class="pillar" data-aos="fade-left" data-aos-delay="200">
+            <div class="pillar__icon"><i data-lucide="shield-check"></i></div>
+            <h3>Values</h3>
+            <p>
+              We adhere to the rules and regulations set by the Nigerian Institution of
+              Surveyors — and deliver full value for every engagement.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CEO / LEADERSHIP ===== -->
+  <section class="ceo" id="ceo">
+    <div class="container">
+      <header class="section-head" data-aos="fade-up">
+        <span class="section-eyebrow">— Leadership</span>
+        <h2 class="section-title">The hands on the <em>theodolite</em>.</h2>
+        <p class="section-lede">
+          Two principal partners, four office technologists, and one standard: the standard of the Institution.
+        </p>
+      </header>
+
+      <div class="ceo__grid">
+        <article class="leader leader--md" data-aos="zoom-in-up">
+          <div class="leader__frame">
+            <img src="assets/md-photo.jpg" alt="Surv. Olaoye Murphy Omoloye, Managing Director" class="leader__photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"/>
+            <div class="leader__initials">OM</div>
+            <div class="leader__ring"></div>
+          </div>
+          <div class="leader__body">
+            <span class="leader__role">Managing Director</span>
+            <h3 class="leader__name">Surv. Olaoye Murphy Omoloye</h3>
+            <p class="leader__creds">B.Sc Surveying and Geo-informatics<br/>Nnamdi Azikiwe University, Awka</p>
+            <p class="leader__bio">
+              A Registered Surveyor and Member of the Nigerian Institution of Surveyors.
+              Leads the firm's strategic direction, client engagements, and most complex
+              field programs — from as-built surveys for the Nigerian Army to large-scale
+              topographical work for estate developers.
+            </p>
+            <ul class="leader__meta">
+              <li><i data-lucide="badge-check"></i> NIS Member</li>
+              <li><i data-lucide="briefcase"></i> Project Lead</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="leader" data-aos="zoom-in-up" data-aos-delay="120">
+          <div class="leader__frame leader__frame--alt">
+            <img src="assets/partner-photo.jpg" alt="Surv. Olaoye Omobolanle Ligali, Partner" class="leader__photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"/>
+            <div class="leader__initials">OL</div>
+            <div class="leader__ring"></div>
+          </div>
+          <div class="leader__body">
+            <span class="leader__role">Partner</span>
+            <h3 class="leader__name">Surv. Olaoye Omobolanle Ligali</h3>
+            <p class="leader__creds">B.Sc Surveying and Geo-informatics<br/>Nnamdi Azikiwe University, Awka</p>
+            <p class="leader__bio">
+              Partner and co-architect of the firm's quality assurance culture.
+              Brings deep expertise across cadastral surveying and geo-informatics to
+              every assignment undertaken by the practice.
+            </p>
+          </div>
+        </article>
+
+        <article class="leader leader--team" data-aos="zoom-in-up" data-aos-delay="240">
+          <div class="leader__frame leader__frame--team">
+            <i data-lucide="users"></i>
+          </div>
+          <div class="leader__body">
+            <span class="leader__role">Support Team</span>
+            <h3 class="leader__name">Office Technologists & Admin</h3>
+            <p class="leader__creds">Four dedicated members</p>
+            <p class="leader__bio">
+              A disciplined back-office team keeping instruments calibrated, deliverables
+              on schedule, and every project traceable from acquisition to archive.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <header class="section-head" data-aos="fade-up">
+        <span class="section-eyebrow">— Selected portfolio</span>
+        <h2 class="section-title">Work of <em>record</em>.</h2>
+        <p class="section-lede">A sample of clients who have trusted M.B Smart Surveys with projects of consequence.</p>
+      </header>
+
+      <div class="portfolio__list">
+        <article class="project" data-aos="fade-up">
+          <div class="project__year">2018</div>
+          <div class="project__main">
+            <span class="project__client">Nigerian Army Properties Limited (NAPL)</span>
+            <h3>As-Built Survey — Minimah Estate</h3>
+            <p>Mobolaji Bank Anthony Way, Ikeja, Lagos.</p>
+          </div>
+          <div class="project__tag">As-Built Survey</div>
+        </article>
+
+        <article class="project" data-aos="fade-up" data-aos-delay="60">
+          <div class="project__year">2016</div>
+          <div class="project__main">
+            <span class="project__client">Nigerian Army Properties Limited (NAPL)</span>
+            <h3>Topographical Survey — Post Exchange HQ</h3>
+            <p>Walter Carrington (former Eleke) Crescent, Victoria Island.</p>
+          </div>
+          <div class="project__tag">Topographical</div>
+        </article>
+
+        <article class="project" data-aos="fade-up" data-aos-delay="120">
+          <div class="project__year">2019</div>
+          <div class="project__main">
+            <span class="project__client">Horizon Experience Gardens Estate</span>
+            <h3>Topographical Survey — Kusenla Road</h3>
+            <p>Off Lekki–Epe Expressway, Eti-Osa LGA, Lagos.</p>
+          </div>
+          <div class="project__tag">Topographical</div>
+        </article>
+
+        <article class="project" data-aos="fade-up" data-aos-delay="180">
+          <div class="project__year">2021</div>
+          <div class="project__main">
+            <span class="project__client">Emmanuel Chuks Osemeke</span>
+            <h3>Perimeter Survey — Oju Agbe Village</h3>
+            <p>Ibeju Lekki LGA, Lagos State. Area: 5.07 Hectares. Title documentation.</p>
+          </div>
+          <div class="project__tag">Cadastral</div>
+        </article>
+
+        <article class="project" data-aos="fade-up" data-aos-delay="240">
+          <div class="project__year">2021</div>
+          <div class="project__main">
+            <span class="project__client">Aniekpenoattai John Asuquo</span>
+            <h3>Perimeter Survey — Igando-Oloja Town</h3>
+            <p>Ibeju Lekki LGA, Lagos State. Area: 1,426.153 sq. m. Title documentation.</p>
+          </div>
+          <div class="project__tag">Cadastral</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIAL / HUMAN TOUCH ===== -->
+  <section class="testimonial" id="testimonial">
+    <div class="container">
+      <div class="testimonial__grid">
+        <div class="testimonial__image" data-aos="fade-right">
+          <div class="testimonial__frame">
+            <img src="assets/cleint.png" alt="A satisfied client smiling" class="testimonial__photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"/>
+            <div class="testimonial__placeholder">
+              <i data-lucide="smile"></i>
+              <span>Your photo here</span>
+              <small>assets/happy-client.jpg</small>
+            </div>
+          </div>
+          <div class="testimonial__badge">
+            <i data-lucide="quote"></i>
+          </div>
+          <div class="testimonial__deco testimonial__deco--1" aria-hidden="true"></div>
+          <div class="testimonial__deco testimonial__deco--2" aria-hidden="true"></div>
+        </div>
+
+        <div class="testimonial__content" data-aos="fade-left" data-aos-delay="150">
+          <span class="section-eyebrow">— Why clients smile</span>
+          <h2 class="section-title">
+            Precision you can <em>trust</em>, service you'll <em>remember</em>.
+          </h2>
+          <p class="testimonial__quote">
+            "From title documentation to estate development, our clients walk away
+            with deliverables that stand up in boardrooms, courtrooms, and title
+            registries alike. Their confidence is the measure of our work."
+          </p>
+          <div class="testimonial__author">
+            <div class="testimonial__line"></div>
+            <div>
+              <strong>M.B Smart Surveys & Geo-Data Services</strong>
+              <span>Serving Nigeria since registration under CAMA 1990</span>
+            </div>
+          </div>
+
+          <div class="testimonial__chips">
+            <span class="chip"><i data-lucide="heart"></i> Client-focused</span>
+            <span class="chip"><i data-lucide="award"></i> Professionally certified</span>
+            <span class="chip"><i data-lucide="handshake"></i> Long-term partners</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <header class="section-head" data-aos="fade-up">
+        <span class="section-eyebrow">— Reach us directly</span>
+        <h2 class="section-title">Let's <em>connect</em>.</h2>
+        <p class="section-lede">
+          Pick the channel that works for you. We respond to every inquiry within two working days.
+        </p>
+      </header>
+
+      <div class="contact__grid">
+        <a href="tel:+2348000000000" class="contact-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="contact-card__icon"><i data-lucide="phone"></i></div>
+          <span class="contact-card__label">Call us</span>
+          <h3 class="contact-card__value">+234 800 000 0000</h3>
+          <p class="contact-card__meta">Mon — Fri · 9:00am to 5:00pm</p>
+          <span class="contact-card__cta">
+            Call now <i data-lucide="arrow-up-right"></i>
+          </span>
+        </a>
+
+        <a href="mailto:info@mbsmartsurveys.com" class="contact-card contact-card--accent" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-card__icon"><i data-lucide="mail"></i></div>
+          <span class="contact-card__label">Email us</span>
+          <h3 class="contact-card__value">info@mbsmartsurveys.com</h3>
+          <p class="contact-card__meta">For quotes, briefs & partnerships</p>
+          <span class="contact-card__cta">
+            Send an email <i data-lucide="arrow-up-right"></i>
+          </span>
+        </a>
+
+        <a href="https://maps.google.com/?q=Lagos+Nigeria" target="_blank" rel="noopener" class="contact-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-card__icon"><i data-lucide="map-pin"></i></div>
+          <span class="contact-card__label">Visit the office</span>
+          <h3 class="contact-card__value">Lagos, Nigeria</h3>
+          <p class="contact-card__meta">Fieldwork nationwide · Walk-ins by appointment</p>
+          <span class="contact-card__cta">
+            Get directions <i data-lucide="arrow-up-right"></i>
+          </span>
+        </a>
+      </div>
+
+      <div class="contact__strip" data-aos="fade-up" data-aos-delay="300">
+        <div class="contact__strip-item">
+          <i data-lucide="clock"></i>
+          <div>
+            <strong>Response time</strong>
+            <span>Within 48 hours</span>
+          </div>
+        </div>
+        <div class="contact__strip-item">
+          <i data-lucide="shield-check"></i>
+          <div>
+            <strong>Registered</strong>
+            <span>CAC · CAMA 1990</span>
+          </div>
+        </div>
+        <div class="contact__strip-item">
+          <i data-lucide="badge-check"></i>
+          <div>
+            <strong>Certified</strong>
+            <span>Nigerian Institution of Surveyors</span>
+          </div>
+        </div>
+        <div class="contact__strip-item">
+          <i data-lucide="globe"></i>
+          <div>
+            <strong>Coverage</strong>
+            <span>Across Nigeria</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOOK A SESSION ===== -->
+  <section class="book" id="book">
+    <div class="book__bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="book__grid">
+        <div class="book__intro" data-aos="fade-right">
+          <span class="section-eyebrow section-eyebrow--light">— Book a session</span>
+          <h2 class="section-title section-title--light">
+            Let's survey <em>your</em> ground.
+          </h2>
+          <p class="book__para">
+            Tell us about your site, timeline, and objectives. Our principal partners
+            personally review every inquiry and reply within two working days.
+          </p>
+
+          <ul class="book__meta">
+            <li><i data-lucide="map-pin"></i><span>Field coverage across Nigeria</span></li>
+            <li><i data-lucide="clock"></i><span>Response within 48 hours</span></li>
+            <li><i data-lucide="file-check-2"></i><span>Title-ready deliverables</span></li>
+          </ul>
+        </div>
+
+        <form class="book__form" id="bookForm" data-aos="fade-left" data-aos-delay="150" novalidate>
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required placeholder="Jane Doe"/>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@example.com"/>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+234 ..."/>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="service">Service needed</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service…</option>
+              <option>Surveying & Geoinformatics Consultancy</option>
+              <option>Topographical Survey</option>
+              <option>Bathymetric Survey</option>
+              <option>Cadastral / Perimeter Survey</option>
+              <option>Engineering Design & Route Survey</option>
+              <option>Mapping / GIS</option>
+              <option>Land Acquisition</option>
+              <option>Project Management</option>
+            </select>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="date">Preferred date</label>
+              <input type="date" id="date" name="date"/>
+            </div>
+            <div class="field">
+              <label for="location">Project location</label>
+              <input type="text" id="location" name="location" placeholder="e.g. Ibeju Lekki, Lagos"/>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Project brief</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about the site, size, and objectives…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">
+            Request Session
+            <i data-lucide="send"></i>
+          </button>
+
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo.png" alt="MB Smart Surveys logo"/>
+        <div>
+          <p class="footer__title">M.B Smart Surveys & Geo-Data Services</p>
+          <p class="footer__tag">Registered surveyors. Grounded in Nigeria.</p>
+          <div class="footer__socials" aria-label="Social media">
+            <a href="#" class="social" aria-label="Facebook" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M13.5 21.95v-8.2h2.75l.4-3.2h-3.15V8.5c0-.9.25-1.55 1.6-1.55h1.7V4.1c-.3 0-1.3-.1-2.45-.1-2.45 0-4.1 1.5-4.1 4.25v2.3h-2.75v3.2h2.75v8.2h3.25z"/>
+              </svg>
+            </a>
+            <a href="#" class="social" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="social" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.22 0z"/>
+              </svg>
+            </a>
+            <a href="#" class="social" aria-label="Twitter / X" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="#" class="social" aria-label="WhatsApp" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </a>
+            <a href="mailto:info@mbsmartsurveys.com" class="social" aria-label="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__cols">
+        <div>
+          <h4>Explore</h4>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#ceo">Leadership</a>
+          <a href="#portfolio">Portfolio</a>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <span>Topographical Survey</span>
+          <span>Bathymetric Survey</span>
+          <span>Cadastral Survey</span>
+          <span>Mapping / GIS</span>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <a href="#book">Book a Session</a>
+          <span>Registered: CAMA 1990</span>
+          <span>Member, Nigerian Institution of Surveyors</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__rule"></div>
+    <div class="container footer__copy">
+      <p>© <span id="year"></span> M.B Smart Surveys & Geo-Data Services. All rights reserved.</p>
+      <p>Designed with precision, the way we measure the ground.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
